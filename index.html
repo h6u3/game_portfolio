@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haruki Uda's Game Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Haruki Uda's Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#games">Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tech-demos">Tech Demos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="container py-5">
+        <h1 class="text-center">Welcome to My Game Portfolio</h1>
+        <p class="text-center">Explore my latest projects, games, and technical demos as I document my learning and growth as a game developer.</p>
+    </section>
+
+    <!-- Games Section -->
+    <section id="games" class="container py-5">
+        <h2 class="text-center">Games</h2>
+        <div class="row">
+            <!-- PacSnake Game -->
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="image/pacsnake.png" class="card-img-top" alt="PacSnake">
+                    <div class="card-body">
+                        <h5 class="card-title">PacSnake</h5>
+                        <p class="card-text">
+                            PacSnake is a fusion of Pac-Man and Snake mechanics. Players control a snake that grows by eating ghosts with a power-up, filling the board with its body. Avoid collisions with your own body or ghosts without a power-up! The goal is to score points before dying by filling the board.
+                        </p>
+                        <a href="https://github.com/h6u3/pacsnake" class="btn btn-primary">View on GitHub</a>
+                        <a href="pacsnake.html" class="btn btn-primary">View more Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- FreezeFrame Game -->
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="image/freezeframe.png" class="card-img-top" alt="FreezeFrame">
+                    <div class="card-body">
+                        <h5 class="card-title">FreezeFrame</h5>
+                        <p class="card-text">
+                            In FreezeFrame, time only moves when the player does. Players will navigate rooms filled with enemies, bullets, and obstacles. Every player action progresses time, allowing for tactical planning from the player and for hazards to advance. Players dodge bullets, eliminate enemies, and advance through levels using the time-bending mechanic to solve combat puzzles. 
+                        </p>
+                        <a href="https://github.com/TGP-24S2/Team-Game-Project" class="btn btn-primary">View on GitHub</a>
+                        <a href="freezeframe.html" class="btn btn-primary">View more Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Demos Section -->
+    <section id="tech-demos" class="container py-5">
+        <h2 class="text-center">Tech Demos</h2>
+        <div class="accordion" id="techDemosAccordion">
+            <!-- Week 1 Exercises -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Week 1 Exercises
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#techDemosAccordion">
+                    <div class="accordion-body">
+                        <div class="exercise">
+                            <h5>Ex 1x01 - C++ - Using References</h5>
+                            <a href="exercisedocs/1x01.pdf" class="btn btn-primary">Download Exercise PDF</a><br/>
+                            <img src="image/1x01.png" class="img-fluid" alt="Exercise 1 Screenshot">
+                            <p><strong>Reflection:</strong> Honestly, a very simple introductory exercise to C++. Although I was new to C++, this was still a very simple and easy exercise.</p>
+                        </div>
+                        <div class="exercise">
+                            <h5>Ex 1x02 - Game - Simple Dice</h5>
+                            <a href="exercisedocs/1x02.pdf" class="btn btn-primary">Download Exercise PDF</a><br/>
+                            <img src="image/1x02.png" class="img-fluid" alt="Exercise 2 Screenshot">
+                            <p><strong>Reflection:</strong> Since I hadn't coded in a while, this was already a slight challenge to figure out the logic but still, it was a very simple exercise.</p>
+                        </div>
+                        
+                        <div class="exercise">
+                            <h5>Ex 2x01 - C++ - Using Structures</h5>
+                            <a href="exercisedocs/2x01.pdf" class="btn btn-primary">Download Exercise PDF</a><br/>
+                            <img src="image/2x01.png" class="img-fluid" alt="Exercise 2 Screenshot">
+                            <p><strong>Reflection:</strong> This exercise outlines the importance of initialising values to variables. When we print out the values of the player position before initialising them using the setup methods, what happens is that they are assigned arbitrary values which would in practice cause many errors. Since the exercise pdf had very specific steps and outlines, it was a very simple exercise.</p>
+                        </div>                        
+                        <div class="exercise">
+                            <h5>Ex 2x02 - C++ - Using Enumerations</h5>
+                            <a href="exercisedocs/2x02.pdf" class="btn btn-primary">Download Exercise PDF</a><br/>
+                            <img src="image/2x02.png" class="img-fluid" alt="Exercise 2 Screenshot">
+                            <p><strong>Reflection:</strong> This exercise outlines ENUM usage in C++. Enumerations aren't a new concept to me so honestly this was a very easy exercise.</p>
+                        </div>                        
+                        <div class="exercise">
+                            <h5>Ex 2x03 - C++ - Using Pointers and the Freestore</h5>
+                            <a href="exercisedocs/2x03.pdf" class="btn btn-primary">Download Exercise PDF</a><br/>
+                            <img src="image/2x03.png" class="img-fluid" alt="Exercise 2 Screenshot">
+                            <p><strong>Reflection:</strong> I hate pointers.............</p>
+                        </div>
+                        <!-- Add more exercises as needed -->
+                    </div>
+                </div>
+            </div>
+            <!-- Week 2 Exercises -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Week 2 Exercises
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#techDemosAccordion">
+                    <div class="accordion-body">
+                        <div class="exercise">
+                            <h5>Ex 3x01 - C++ - Using OOP</h5>
+                            <a href="exercisedocs/3x01.pdf" class="btn btn-primary">Download Exercise PDF</a><br/>
+                            <img src="image/3x01.png" class="img-fluid" alt="Exercise 3x01 Screenshot">
+                            <p><strong>Reflection:</strong> Since I had completed P2 course prior, OOP was not a new concept to me. This exercise was a good place to refresh my memories regarding OOP and to get used to OOP in C++.</p>
+                        </div>
+                        <div class="exercise">
+                            <h5>Ex 3x02 - C++ - Using an Object Factory</h5>
+                            <a href="exercisedocs/3x02.pdf" class="btn btn-primary">Download Exercise PDF</a><br/>
+                            <img src="image/3x02.png" class="img-fluid" alt="Exercise 3x02 Screenshot">
+                            <p><strong>Reflection:</strong> This Object Factory concept was new to me. Although the exercise was pretty easy, it opened up a new perspective towards how I can approach similar problems where I may have many subclasses in OOP. </p>
+                        </div>
+                        <div class="exercise">
+                            <h5>Ex 3x03 - C++ - Using STL Containers and Iterators</h5>
+                            <a href="exercisedocs/3x03.pdf" class="btn btn-primary">Download Exercise PDF</a><br/>
+                            <img src="image/3x03.png" class="img-fluid" alt="Exercise 3x03 Screenshot">
+                            <p><strong>Reflection:</strong> All of the used concepts here had similar counterparts in Java which I have experience in so this was nothing new and was fairly easy. </p>
+                        </div>
+                        <div class="exercise">
+                            <h5>Ex 3x05 - C++ - Using OO Inheritance</h5>
+                            <a href="exercisedocs/3x05.pdf" class="btn btn-primary">Download Exercise PDF</a><br/>
+                            <img src="image/3x05.png" class="img-fluid" alt="Exercise 3x05 Screenshot">
+                            <p><strong>Reflection:</strong> Again, OOP concepts were nothing new. Inheritance was nothing new to me and thus this was also another easy exercise.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Week 3 Exercises -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Week 3 Exercises
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#techDemosAccordion">
+                    <div class="accordion-body">
+                        <div class="exercise">
+                            <h5>Ex 6x01 - C++ - Implement Scenes</h5>
+                            <a href="exercisedocs/6x01.pdf" class="btn btn-primary">Download Exercise PDF</a><br/>
+                            <img src="image/6x01.png" class="img-fluid" alt="Exercise 6x01 Screenshot">
+                            <p><strong>Reflection:</strong> This exercise was not difficult. Mainly because it was basically just copy and paste from the lecture slides. However, since the lecture slides were formatted very badly, and that the copy and paste would mess with the formatting, there was A LOT and I mean a lot of code refactoring and fixing formatting so that the code would even run. </p>
+                        </div>
+                        <div class="exercise">
+                            <h5>Ex 6x02 - C++ - AUT Splash Screen Scene</h5>
+                            <a href="exercisedocs/6x02.pdf" class="btn btn-primary">Download Exercise PDF</a><br/>
+                            <img src="image/6x02.png" class="img-fluid" alt="Exercise 6x02 Screenshot">
+                            <p><strong>Reflection:</strong> Since I couldn't find a convenient AUT logo image, I just used checkerboard png for this exercise. Since it would simply be a sprite swap, I would say this is sufficient for now. </p>
+                        </div>
+                        <div class="exercise">
+                            <h5>Ex 6x03 - C++ - Integrate Dear ImGui</h5>
+                            <a href="exercisedocs/6x03.pdf" class="btn btn-primary">Download Exercise PDF</a><br/>
+                            <img src="image/6x03.png" class="img-fluid" alt="Exercise 6x03 Screenshot">
+                            <p><strong>Reflection:</strong> Again, just following the lecture slides. Nothing hard. In hindsight, implementing this was probably the single most important thing to be done in the GP framework. </p>
+                        </div>
+                        <div class="exercise">
+                            <h5>Ex 6x05 - C++ - Add the InputSystem</h5>
+                            <a href="exercisedocs/6x05.pdf" class="btn btn-primary">Download Exercise PDF</a><br/>
+                            <img src="image/6x05.png" class="img-fluid" alt="Exercise 6x05 Screenshot">
+                            <p><strong>Reflection:</strong> This. Caused. So. Many. Problems. Mainly because the Xbox Controller code would randomly be triggered on my laptop. This was because the trackpoint on my Lenovo laptop was being recognized as a Xbox controller's joystick. So much pain.</p>
+                        </div>
+                        <div class="exercise">
+                            <h5>Ex 6x06 - Game - The Ball Game</h5>
+                            <a href="exercisedocs/6x06.pdf" class="btn btn-primary">Download Exercise PDF</a><br/>
+                            <img src="image/6x06.png" class="img-fluid" alt="Exercise 6x06 Screenshot">
+                            <p><strong>Reflection:</strong> First real "game" made on the GP Framework. This allowed me to properly understand how the GP Framework functions. Honestly wasn't tooooooo difficult. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Week 4 Exercises -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Week 4 Exercises
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#techDemosAccordion">
+                    <div class="accordion-body">
+                        <div class="exercise">
+                            <h5>Ex 7x01 - C++ - Detecting and Fixing Memory Leaks</h5>
+                            <a href="exercisedocs/7x01.pdf" class="btn btn-primary">Download Exercise PDF</a><br/>
+                            <img src="image/7x01.png" class="img-fluid" alt="Exercise 7x01 Screenshot">
+                            <p><strong>Reflection:</strong> Although this is a very important step in game dev, it's honestly such a tedious step in the process. Especially how this piece of code doesn't tell us where the memory leaks are happening. Since it just says "there are memory leaks" but no hint as to where, we have to guess and check multiple times. This took so long to do. Never want to do it again. Having this in mind though forces me to code in a good way. I love and hate it at the same time. Amen.</p>
+                        </div>
+                        <div class="exercise">
+                            <h5>Ex 7x02 - C++ - The Animated Sprite</h5>
+                            <a href="exercisedocs/7x02.pdf" class="btn btn-primary">Download Exercise PDF</a><br/>
+                            <img src="image/7x02.png" class="img-fluid" alt="Exercise 7x02 Screenshot">
+                            <p><strong>Reflection:</strong> Very straight forward exercise, mostly copy paste from lecture slides. Very easy. </p>
+                        </div>
+                        <div class="exercise">
+                            <h5>Ex 7x03 - C++ - Text Rendering with SDL_ttf</h5>
+                            <a href="exercisedocs/7x03.pdf" class="btn btn-primary">Download Exercise PDF</a><br/>
+                            <img src="image/7x03.png" class="img-fluid" alt="Exercise 7x03 Screenshot">
+                            <p><strong>Reflection:</strong> Probably the worst exercise yet. The GP Framework and SDL_ttf library don't match versions. Which means using the code from the slides did not work. Thankfully, a member in the unofficial AUT discord found the solution and was able to help me out. In the end, I was able to do it. But I BEG the slides and all of AUT content to be updated. LIKE PLEASE.</p>
+                        </div>
+                        <div class="exercise">
+                            <h5>Ex 7x07 - C++ - Particle Effect</h5>
+                            <a href="exercisedocs/7x07.pdf" class="btn btn-primary">Download Exercise PDF</a><br/>
+                            <img src="image/7x07.png" class="img-fluid" alt="Exercise 7x07 Screenshot">
+                            <p><strong>Reflection:</strong> Code should work but don't have time to test it so lol. Addition: Future me here, it works. Used it in Individual Game Project Pac-Snake.</p>
+                        </div>
+                        <div class="exercise">
+                            <h5>Ex 8x01 - Tools - Creating Audio SFX</h5>
+                            <a href="exercisedocs/8x01.pdf" class="btn btn-primary">Download Exercise PDF</a><br/>
+                            <img src="image/8x01.png" class="img-fluid" alt="Exercise 8x01 Screenshot">
+                            <p><strong>Reflection:</strong> Not going to lie, fun exercise just generating random noises. Very.</p>
+                        </div>
+                        <div class="exercise">
+                            <h5>Ex 8x02 - C++ - Middleware Integration - FMOD</h5>
+                            <a href="exercisedocs/8x02.pdf" class="btn btn-primary">Download Exercise PDF</a><br/>
+                            <img src="image/8x02.png" class="img-fluid" alt="Exercise 8x02 Screenshot">
+                            <p><strong>Reflection:</strong> Since we no longer have SVN which is referenced multiple times in the exercise sheets, we no longer had the download to the FMOD library. I had to go find it manually which took a lot of time and a email registration to get the API download. After that, the actual implementation wasn't tooooo difficult mainly because there were example code provided in the FMOD API documentation which I could reference. </p>
+                        </div>
+                        <div class="exercise">
+                            <h5>Ex 8x03 - C++ - FMOD Splash Screen</h5>
+                            <a href="exercisedocs/8x03.pdf" class="btn btn-primary">Download Exercise PDF</a><br/>
+                            <img src="image/8x03.png" class="img-fluid" alt="Exercise 8x03 Screenshot">
+                            <p><strong>Reflection:</strong> Same code as AUT Splash Screen. Very Easy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Week 5 Exercises -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Week 5 Exercises
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#techDemosAccordion">
+                    <div class="accordion-body">
+                        <div class="exercise">
+                            <h5>Ex 9x01 - C++ - INI Parser</h5>
+                            <a href="exercisedocs/9x01.pdf" class="btn btn-primary">Download Exercise PDF</a><br/>
+                            <img src="image/9x01.png" class="img-fluid" alt="Exercise 9x01 Screenshot">
+                            <p><strong>Reflection:</strong> Thankfully, I made a very similar program in Java before so it wasn't too difficult. However, overall, this did took a little bit of time since I was basically working from scratch on the parser.</p>
+                        </div>
+                        <div class="exercise">
+                            <h5>Ex 9x02 - Game - Data Driven Game Design</h5>
+                            <a href="exercisedocs/9x02.pdf" class="btn btn-primary">Download Exercise PDF</a><br/>
+                            <img src="image/9x02.png" class="img-fluid" alt="Exercise 9x02 Screenshot">
+                            <p><strong>Reflection:</strong> Just adding a config file for the parser to read and parse into the game. Here, I used the window sizes.</p>
+                        </div>
+                        <div class="exercise">
+                            <h5>Ex 10x01 - C++ - More Logging and Debug Features</h5>
+                            <a href="exercisedocs/10x01.pdf" class="btn btn-primary">Download Exercise PDF</a><br/>
+                            <img src="image/10x01.png" class="img-fluid" alt="Exercise 10x01 Screenshot">
+                            <p><strong>Reflection:</strong> Just copying code from the slides. Very simple. These debug features proved itself to be very useful later on. </p>
+                        </div>
+                        <div class="exercise">
+                            <h5>Ex 10x02 - C++ - TextureManager DebugDraw</h5>
+                            <a href="exercisedocs/10x02.pdf" class="btn btn-primary">Download Exercise PDF</a><br/>
+                            <img src="image/10x02.png" class="img-fluid" alt="Exercise 10x02 Screenshot">
+                            <p><strong>Reflection:</strong> Honestly, this debugdraw of the TextureManager wasn't that useful later on. But this exercise itself was fairly easy since it was again, copying code. </p>
+                        </div>
+                        <div class="exercise">
+                            <h5>Ex 10x03 - C++ - Data Driven Level Load</h5>
+                            <a href="exercisedocs/10x03.pdf" class="btn btn-primary">Download Exercise PDF</a><br/>
+                            <img src="image/10x03.png" class="img-fluid" alt="Exercise 10x03 Screenshot">
+                            <p><strong>Reflection:</strong> THIS. This took so much time. I knew it was necessary for my IGP, Pac-Snake but it just took so much time to implement. I feel like there was a smarter way to implement this but it's over anyways. Never want to do it again.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Haruki Uda. All Rights Reserved.</p>
+        <p>References:</p>
+        <p>Game Programming Exercises. (2024). Auckland University of Technology. https://canvas.aut.ac.nz/courses/18755/</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

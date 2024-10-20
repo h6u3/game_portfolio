@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PacSnake - Haruki Uda's Game Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Haruki Uda's Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#games">Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#tech-demos">Tech Demos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PacSnake Game Section -->
+    <section class="container py-5">
+        <h1 class="text-center">PacSnake</h1>
+        <p class="text-center">
+            Pac-Snake is a unique arcade-style game combining the mechanics of two classics:
+            Pac-Man and Snake. The player navigates a maze, collects coins, and avoids enemies
+            while trying to grow their body like Snake. The game is simple to pick up but
+            challenging to master as players balance collecting points and avoiding death by
+            managing an ever-growing body.
+        </p>
+        <!-- PacSnake Image -->
+        <div class="text-center">
+            <img src="image/pacsnake.png" class="img-fluid mb-3" alt="PacSnake Game Thumbnail" style="max-width: 500px;">
+        </div>
+
+        <!-- Button to trigger modal -->
+        <div class="text-center">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#documentsModal">
+                View Related Documents
+            </button>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="documentsModal" tabindex="-1" aria-labelledby="documentsModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="documentsModalLabel">PacSnake Documents</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li><a href="pacsnakedocs/GDD.pdf" target="_blank">Game Design Document</a></li>
+                            <li><a href="pacsnakedocs/Pitch.pdf" target="_blank">Game Pitch</a></li>
+                            <li><a href="pacsnakedocs/TDD.pdf" target="_blank">Technical Design Document</a></li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Link to GitHub Releases -->
+        <div class="text-center mt-4">
+            <a href="https://github.com/h6u3/pacsnake/releases/tag/release" class="btn btn-primary">View Releases on GitHub</a>
+        </div>
+
+        <!-- Challenges and Reflection Section -->
+        <section class="mt-5">
+            <h2>Challenges and Reflections</h2>
+            <p>
+                The development of Pac-Snake presented various challenges and learning opportunities. Below is a reflection on the difficulties encountered during the creation of the game and the approaches taken to overcome them.
+            </p>
+            <h4>Challenges Faced</h4>
+            <p>
+                Some of the most notable challenges included:
+            </p>
+            <ul>
+                <li>Implementing seamless respawning for enemies and power-ups, which required fine-tuning timing mechanisms.</li>
+                <li>Managing multiple control schemes to ensure consistent behavior across devices, which was particularly difficult for touch-based platforms.</li>
+                <li>Designing a clear win condition while accounting for the player's increasing length and remaining game space, which introduced logic complexities.</li>
+                <li>Handling timed mechanics, such as power-up durations, which demanded careful timing and clear feedback for players.</li>
+                <li>Addressing memory management issues and eliminating memory leaks to ensure smooth performance.</li>
+            </ul>
+            
+            <h4>Solutions and Approaches</h4>
+            <p>
+                To address these challenges, I took the following steps:
+            </p>
+            <ul>
+                <li>Used a separate counter variable with deltaTime to manage respawn timers for more accurate timing.</li>
+                <li>Integrated additional control schemes by simplifying the input logic through the use of OR conditions in existing if statements.</li>
+                <li>Leveraged data-driven design to track available game space and correlate it with the player’s length for a clear win condition.</li>
+                <li>Implemented visual cues and a robust timing mechanism using deltaTime to manage power-up durations effectively.</li>
+                <li>Utilized systematic memory leak detection and patching to maintain performance and prevent bottlenecks.</li>
+            </ul>
+
+            <h4>Reflection and Future Considerations</h4>
+            <p>
+                Reflecting on the development process, I have identified several key takeaways for future projects:
+            </p>
+            <ul>
+                <li>Plan for flexible, scalable design early on, such as data-driven systems, to allow for easier updates and testing.</li>
+                <li>Prioritize thorough and platform-specific testing early in development, especially for control schemes and performance.</li>
+                <li>Ensure that game feedback mechanisms are clear and consistent to improve user experience.</li>
+                <li>Adopt a proactive approach to memory management to avoid performance issues later in development.</li>
+            </ul>
+        </section>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2024 Haruki Uda. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

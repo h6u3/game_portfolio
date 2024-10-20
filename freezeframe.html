@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreezeFrame - Haruki Uda's Game Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Haruki Uda's Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#games">Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#tech-demos">Tech Demos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- FreezeFrame Game Section -->
+    <section class="container py-5">
+        <h1 class="text-center">FreezeFrame</h1>
+        <p class="text-center">
+            FreezeFrame is a fast-paced, tactical puzzle-action game where time only moves when you do.
+            This unique time-bending mechanic allows players to plan their next move while dodging attacks and lining up precise shots.
+        </p>
+        <!-- FreezeFrame Image -->
+        <div class="text-center">
+            <img src="image/freezeframe.png" class="img-fluid mb-3" alt="FreezeFrame Game Thumbnail" style="max-width: 500px;">
+        </div>
+
+        <!-- Button to trigger modal -->
+        <div class="text-center">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#documentsModal">
+                View Related Documents
+            </button>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="documentsModal" tabindex="-1" aria-labelledby="documentsModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="documentsModalLabel">FreezeFrame Documents</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li><a href="freezeframedocs/GDD.pdf" target="_blank">Game Design Document</a></li>
+                            <li><a href="freezeframedocs/Pitch.pdf" target="_blank">Game Pitch</a></li>
+                            <li><a href="freezeframedocs/TDD.pdf" target="_blank">Technical Design Document</a></li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Link to GitHub Releases -->
+        <div class="text-center mt-4">
+            <a href="https://github.com/TGP-24S2/Team-Game-Project" class="btn btn-primary">View Releases on GitHub</a>
+        </div>
+
+        <!-- Challenges and Reflection Section -->
+        <section class="mt-5">
+            <h2>Challenges and Reflections</h2>
+            <p>
+                The development of FreezeFrame presented several challenges and learning opportunities. Below is a reflection on the difficulties faced during the creation of the game and the strategies employed to overcome them.
+            </p>
+            <h4>Challenges Faced</h4>
+            <p>
+                Some of the key challenges included:
+            </p>
+            <ul>
+                <li>Level generation and balancing difficulty consistently across randomly generated maps.</li>
+                <li>Enhancing the AI of enemies to make combat more engaging and less predictable.</li>
+                <li>Overhauling the weapon system to streamline interactions with different weapon types.</li>
+                <li>Managing version control more effectively to avoid merge conflicts and enhance team collaboration.</li>
+            </ul>
+
+            <h4>Solutions and Approaches</h4>
+            <p>
+                To address these challenges, we implemented the following solutions:
+            </p>
+            <ul>
+                <li>Improved level variety by adjusting the random generation algorithm to ensure diverse and balanced level designs.</li>
+                <li>Enhanced enemy AI by introducing more randomized behaviors and improved player tracking systems.</li>
+                <li>Simplified the weapon system by consolidating it into a single class, allowing for easier access to weapon-specific methods.</li>
+            </ul>
+
+            <h4>Reflection and Future Considerations</h4>
+            <p>
+                Looking back on the FreezeFrame development process, we identified several key takeaways:
+            </p>
+            <ul>
+                <li>Start planning version control workflows early to avoid common pitfalls like merge conflicts.</li>
+                <li>Ensure that core mechanics are thoroughly tested and refined before expanding the game's features.</li>
+                <li>Invest in more sophisticated AI design to keep gameplay challenging and engaging for players.</li>
+            </ul>
+        </section>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2024 Haruki Uda. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
